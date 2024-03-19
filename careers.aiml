@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>UIUX</pattern>
+	    <template>
+	        <delay>3</delay> You should look into starting a career as a UI/UX Engineer, these developers have a knack for optimizing user experience and 
+	        leverage their strong creativity and graphic design passion to create amazing user interfaces. 
+	  
+	        To restart say "restart"
+        </template>
+    </category>
+    
+    <category>
+        <pattern>frontEnd</pattern>
+        <template>
+            <delay>3</delay>You should become a Front-end Engineer! Front-end web developers create great looking and responsive webpages, 
+            they use their coding abilities and an eye for design to create robust webpages that the end user interacts with.
+            
+            To restart say "restart"
+        </template>
+    </category>
+    
+    <category>
+        <pattern>softwareEngineer</pattern>
+        <template>
+            <delay>3</delay> You should become a software engineer! Software engineers love to code and have a strong ability for problem solving.
+            Furthermore, you will create a diverse range of applications to meet client needs.
+            
+            To restart say "restart"
+        </template>
+    </category>
+    
+    <category>
+        <pattern>systemsAdministerator</pattern>
+        <template>
+            <delay>3</delay> You should become a Systems administrator! System administrators solve and optimize computer hardware to ensure the company's technical needs are being met and maintained.
+            As a Systems admin you will use your creativity to design the optimal hardware systems infrastructure.
+            
+            To restart say "restart"
+        </template>
+    </category>
+    
+    <category>
+        <pattern>dataAnalyist</pattern>
+        <template>
+            <delay>3</delay>You should become a Data analyst! If you don’t mind minimal coding and love to work with numbers, this is the career for you! As Data Analyst you will use your coding 
+               abilities to graph and visualize large numbers of data to ensure numerical driven information for the company.
+
+            To restart say "restart"
+        </template>
+    </category>
+
+  <category>
+        <pattern>networkAdmin</pattern>
+        <template>
+            <delay>3</delay>You should become a network administrator! Network admins make sure the company's networking infrastructure is connected and safe! You will build a secure network using your
+              deep knowledge of cyber security and networking hardware.
+
+            
+            To restart say "restart"
+        </template>
+    </category>
+
+    <category>
+        <pattern>noToAll</pattern>
+        <template>
+            <delay>3</delay>Oh bummer! I am sorry I was unable to narrow down a career choice for you, if computer science does not interest you WGU offers many great degrees, 
+             please look into those degrees if computer science does not interest you.
+            
+            To restart say "restart"
+        </template>
+    
+    </category>
+	
+</aiml>

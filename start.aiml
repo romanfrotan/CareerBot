@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+    <category>
+        <pattern>hello</pattern>
+        <template><delay>1</delay>Hello, I am your virtual WGU career advisor, may I please know your name? please type
+        "my name is (your name)"</template>
+    </category>
+    
+
+    <category>
+        <pattern>hi</pattern>
+        <template><delay>1</delay>Hello, I am your virtual WGU career advisor, may I please know your name? please type
+        "my name is (your name)"</template>
+    </category>
+    
+
+    <category>
+        <pattern>hey</pattern>
+        <template><delay>1</delay>Hello, I am your virtual WGU career advisor, may I please know your name? please type
+        "my name is (your name)"</template>
+    </category>
+    
+
+</aiml>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>*</pattern>
+        <template><delay>2</delay>I do not undertand, if you would like to start over please type "restart".</template>
+    </category>
+    
+   <category>
+        <pattern>restart</pattern>
+        <template><delay>1</delay>Let's try again from the beginning<delay>2</delay>Are you creative?
+            <button>
+                <text>yes</text>
+                <postback>yesToCreative</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>noToCreative</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>my name is *</pattern>
+        <template><delay>3</delay>Welcome night owl, <set name = "username"><star /></set>! Are you ready to find your dream computer science career? please type "yes or no"
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no</pattern>
+        <template>
+         <delay>2</delay>Goodbye!<delay>2</delay>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>yes</pattern>
+        <template><delay>3</delay>Awesome! let's get started, I'll ask you a few questions to narrow down your dream career.<delay>2</delay>Are you creative?
+            <button>
+                <text>yes</text>
+                <postback>yesToCreative</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>noToCreative</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>yesToCreative</pattern>
+        <template>
+            <delay>2</delay>Great! in addition to being creative do you love to code?
+            <button>
+                <text>yes</text>
+                <postback>frontEnd</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>yesToCreativeNoToCode</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>noToCreative</pattern>
+        <template>
+            <delay>2</delay>I understand, do you love to code?
+            <button>
+                <text>yes</text>
+                <postback>NoToCreativeYesToCode</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NoToCreativeNoToCode</postback>
+            </button>
+        </template>
+    </category>
+    
+
+    <category>
+        <pattern>noToCreativeNoToCode</pattern>
+        <template>
+            <delay>2</delay>Do you enjoy working with networks and firewalls?
+            <button>
+                <text>yes</text>
+                <postback>networkAdmin</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>noToAll</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YesToCreativeNoToCode</pattern>
+        <template>
+            <delay>2</delay>Do you love working with computer hardware?
+            <button>
+                <text>yes</text>
+                <postback>systemsAdministerator</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>UIUX</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NoToCreativeYesToCode</pattern>
+        <template>
+            <delay>2</delay>Do you enjoy programming and building applciations? 
+            <button>
+                <text>yes</text>
+                <postback>softwareEngineer</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>YesToCodeNoToApp</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YesToCodeNoToApp</pattern>
+        <template>
+            <delay>2</delay>No worries! do you like working with numbers?
+            <button>
+                <text>yes</text>
+                <postback>dataAnalyist</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>noToAll</postback>
+            </button>
+        </template>
+    </category>
+    
+
+</aiml>
